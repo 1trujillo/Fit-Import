@@ -1,0 +1,46 @@
+# === BUILD ===
+/target/
+**/target/
+*.class
+*.jar
+*.war
+
+# === LOGS ===
+*.log
+
+# === IDEs ===
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.swp
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
+
+# === ENV/LOCAL FILES ===
+*.db
+*.env
+
+# === BACKUP ===
+*.bak
+*.old
+*~
+
+# === TEST & TEMP ===
+*.tmp
+*.out
+
+# === CSV/SQL Temporales ===
+*.csv
+*.sql
+
+# === GIT Config Local ===
+.gitattributes
+
+# === EXCLUIR SI USAS GIT SUBMÓDULOS Y QUIERES EVITAR ===
+Carrito/.git
+Inventario/.git
+Usuarios/.git
