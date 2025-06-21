@@ -1,0 +1,21 @@
+# Maven
+target/
+
+# Gradle
+.gradle/
+build/
+
+# IDEs
+.idea/
+.vscode/ # Ya lo tienes como carpeta, pero si hay archivos de configuración generados, es buena idea ignorarlos.
+*.iml
+
+# Logs
+*.log
+log/
+
+# Otros
+*.jar
+*.war
+*.zip
+*.rar
