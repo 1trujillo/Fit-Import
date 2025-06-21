@@ -1,0 +1,7 @@
+"id";"cantidad";"categoria";"descripcion";"nombre";"precio"
+"2";"12";"Fuerza";"Banco para entrenamiento con pesas";"Banco Plano";"49990"
+"3";"8";"Fuerza";"Banco ajustable multiángulo para entrenamiento de pecho y brazos";"Banco de Pesas Plegable";"89990"
+"4";"50";"Accesorios";"Esterilla de PVC con superficie adherente, ideal para yoga o pilates";"Esterilla Yoga Antideslizante";"12990"
+"id";"apellido";"contraseña";"direccion";"email";"fecha_nacimiento";"fecha_registro";"genero";"nombre";"telefono"
+"1";"Gonzalez";"miClave123";"Av. Siempre Viva 123";"ana.gonzalez@example.com";"1990-05-01";"2025-06-18";"Femenino";"Ana";"+56912345678"
+"2";"Ramírez";"claveSecreta";"Calle Falsa 456";"carlos.ramirez@example.com";"1985-09-15";"2025-06-18";"Masculino";"Carlos";"+56998765432"
