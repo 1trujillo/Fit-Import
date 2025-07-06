@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "carrito_item")
-@Data // Incluye @Getter, @Setter, @ToString, @EqualsAndHashCode
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class CarritoItem {
@@ -27,4 +27,7 @@ public class CarritoItem {
 
     @Column(name = "fecha_agregado")
     private String fechaAgregado;
+
+    @Column(name = "nombre") 
+    private String nombre;
 }

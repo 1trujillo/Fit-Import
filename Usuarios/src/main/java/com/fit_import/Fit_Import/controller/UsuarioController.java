@@ -15,18 +15,30 @@ import org.springframework.web.bind.annotation.RestController;
 import com.fit_import.Fit_Import.model.Usuario;
 import com.fit_import.Fit_Import.service.UsuarioService;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 @RestController
 @RequestMapping("/api/usuarios")
+@Tag(name = "Usuarios", description = "Operaciones CRUD para la gestión de usuarios")
 public class UsuarioController {
 
     @Autowired
     private UsuarioService usuarioService;
 
+    @Operation(
+        summary = "Crear un nuevo usuario",
+        description = "Guarda un nuevo usuario en el sistema y retorna la entidad creada"
+    )
     @PostMapping
     public ResponseEntity<Usuario> crearUsuario(@RequestBody Usuario usuario) {
         return ResponseEntity.ok(usuarioService.guardar(usuario));
     }
 
+    @Operation(
+        summary = "Obtener usuario por ID",
+        description = "Retorna los datos de un usuario si el ID proporcionado existe"
+    )
     @GetMapping("/{id}")
     public ResponseEntity<Usuario> obtenerUsuario(@PathVariable Long id) {
         Optional<Usuario> usuarioOpt = usuarioService.buscarPorId(id);
@@ -37,6 +49,10 @@ public class UsuarioController {
         }
     }
 
+    @Operation(
+        summary = "Listar todos los usuarios",
+        description = "Retorna una lista con todos los usuarios registrados en el sistema"
+    )
     @GetMapping
     public List<Usuario> listarUsuarios() {
         return usuarioService.listarTodos();

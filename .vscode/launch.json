@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "FitImportApplication",
+            "request": "launch",
+            "mainClass": "com.fit_import.Fit_Import.FitImportApplication",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-FitImportApplication<com.fit-import-Fit-Import>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.fit_import.Fit_Import.FitImportApplication",
+            "projectName": "com.fit-import-Fit-Import",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
